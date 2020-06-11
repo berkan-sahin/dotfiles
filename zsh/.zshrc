@@ -21,7 +21,11 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt autocd
-bindkey -v
+bindkey -e
 # End of lines configured by zsh-newuser-install
-
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh || source /usr/share/zsh/site-fucntions/zsh-syntax-highlighting.zsh
+export EDITOR=/usr/bin/nvim
+source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+alias vim="nvim"
+alias ll="ls --color=auto -lAh"
