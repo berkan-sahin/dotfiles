@@ -24,8 +24,10 @@ setopt autocd
 bindkey -e
 # End of lines configured by zsh-newuser-install
 export EDITOR=/usr/bin/nvim
-source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
+export PATH=$PATH:/home/bsahin/.emacs.d/bin
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias vim="nvim"
 alias ll="ls --color=auto -lAh"
+alias emacs="emacs -nw"
