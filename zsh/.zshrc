@@ -30,6 +30,7 @@ SAVEHIST=1000
 setopt autocd
 bindkey -e
 # End of lines configured by zsh-newuser-install
+
 export EDITOR=/usr/bin/emacs
 export PATH=$PATH:/home/bsahin/Android/Sdk/platform-tools
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
