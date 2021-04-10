@@ -72,3 +72,7 @@ URxvt.color250: #d5c4a1
 ! LightGrey + White
 *color7:  #a89984
 *color15: #ebdbb2
+
+
+! Correct DPI for my system (1080p, 14 inch)
+! Xft.dpi:	157

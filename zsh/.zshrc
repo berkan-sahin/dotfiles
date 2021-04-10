@@ -32,17 +32,14 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 export EDITOR=/usr/bin/emacs
-export PATH=$PATH:/home/bsahin/Android/Sdk/platform-tools
+export PATH=$PATH:/home/bsahin/.emacs.d/bin
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/Belgeler/src/powerlevel10k/powerlevel10k.zsh-theme
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias vim="nvim"
 alias ll="ls --color=auto -lAh"
-alias emacs="LANG=C emacs -nw"
+alias emacs="emacs -nw"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# To customize prompt, run `p10k configure` or edit ~/dotfiles/p10k/.p10k.zsh.
-[[ ! -f ~/dotfiles/p10k/.p10k.zsh ]] || source ~/dotfiles/p10k/.p10k.zsh
