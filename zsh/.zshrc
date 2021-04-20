@@ -33,7 +33,8 @@ bindkey -e
 
 export EDITOR=/usr/bin/emacs
 export PATH=$PATH:/home/bsahin/.emacs.d/bin
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ -x /usr/bin/dnf ]] && source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ -x /bin/xbps-query ]] && source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/Belgeler/src/powerlevel10k/powerlevel10k.zsh-theme
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
