@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
- 	  urxvt
+ 	  alacritty
 
 # program launcher
 super + @space
-	  rofi -show run
+	  rofi -show drun
 
 # emacs
 super + e

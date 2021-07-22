@@ -34,12 +34,14 @@ bindkey -e
 export EDITOR=/usr/bin/emacs
 export PATH=$PATH:/home/bsahin/.emacs.d/bin
 [[ -x /usr/bin/dnf ]] && source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ -x /usr/bin/dnf ]] && source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [[ -x /bin/xbps-query ]] && source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/Belgeler/src/powerlevel10k/powerlevel10k.zsh-theme
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias vim="nvim"
 alias ll="ls --color=auto -lAh"
+[[ -x /usr/bin/exa ]] && alias ls="exa" && alias ll="exa -lah"
 alias emacs="emacs -nw"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
