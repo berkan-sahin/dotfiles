@@ -15,7 +15,7 @@ super + e
 	  emacs
 
 # firefox
-super + f
+super + r
 	  firefox
 
 # make sxhkd reload its configuration files:
@@ -38,6 +38,10 @@ XF86AudioMute
 
 XF86Audio{Stop,Play,Prev,Next}
 	mpc -q {stop,toggle,prev,next}
+
+# show power menu
+super + alt + w
+	  ~/.config/polybar/scripts/powermenu-alt
 #
 # bspwm hotkeys
 #
@@ -47,9 +51,6 @@ XF86Audio{Stop,Play,Prev,Next}
 super + Tab
 	  rofi -show window
 
-# show power menu
-super + alt + w
-	  ~/.config/polybar/scripts/powermenu-alt
 
 # quit/restart bspwm
 super + alt + {q,r}
