@@ -5,10 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
 autoload -U colors && colors
 
-[[ ! -f ~/.p10k.zsh ]] && PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+[[ -f ~/.p10k.zsh ]] || PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # The following lines were added by compinstall
 
@@ -33,10 +32,13 @@ bindkey -e
 
 export EDITOR=/usr/bin/emacs
 export PATH=$PATH:/home/bsahin/.emacs.d/bin
-[[ -x /usr/bin/dnf ]] && source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-[[ -x /usr/bin/dnf ]] && source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-[[ -x /bin/xbps-query ]] && source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/Belgeler/src/powerlevel10k/powerlevel10k.zsh-theme
+export QT_QPA_PLATFORM=xcb
+[[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]] && source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+[[ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]] && source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+[[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ -f ~/Belgeler/src/powerlevel10k/powerlevel10k.zsh-theme ]] && source ~/Belgeler/src/powerlevel10k/powerlevel10k.zsh-theme
+[[ -f /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme ]] && source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias vim="nvim"
