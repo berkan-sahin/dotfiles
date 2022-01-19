@@ -31,7 +31,7 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 export EDITOR=/usr/bin/emacs
-export PATH=$PATH:/home/bsahin/.emacs.d/bin
+export PATH=$PATH:/home/bsahin/.emacs.d/bin:/home/bsahin/.local/bin:/home/bsahin/.local/bin/statusbar
 export QT_QPA_PLATFORM=xcb
 [[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [[ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]] && source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -44,7 +44,7 @@ alias grep="grep --color=auto"
 alias vim="nvim"
 alias ll="ls --color=auto -lAh"
 [[ -x /usr/bin/exa ]] && alias ls="exa" && alias ll="exa -lah"
-alias emacs="emacs -nw"
+#alias emacs="emacs -nw"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

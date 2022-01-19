@@ -1,0 +1,130 @@
+disabled: []
+enabled:
+  - id: arcticicestudio.nord-visual-studio-code
+    uuid: 6f35c257-7fd5-4bc2-9cd1-01976589c17a
+  - id: bencoleman.armview
+    uuid: 238a3e72-2381-419b-8ed2-ece541264f28
+  - id: bungcip.better-toml
+    uuid: 464f4ac7-af65-4aa9-9907-4ba7fa419085
+  - id: coolbear.systemd-unit-file
+    uuid: fe20f03a-2abf-470a-ab23-d671ec38ce42
+  - id: cschlosser.doxdocgen
+    uuid: da7e26d5-d57c-4742-ab47-d77fb189e195
+  - id: dan-c-underwood.arm
+    uuid: 99e3906b-d232-48f2-902a-fcba762add97
+  - id: dbaeumer.vscode-eslint
+    uuid: 583b2b34-2c1e-4634-8c0b-0b82e283ea3a
+  - id: eamodio.gitlens
+    uuid: 4de763bd-505d-4978-9575-2b7696ecf94e
+  - id: firefox-devtools.vscode-firefox-debug
+    uuid: c5f4d87f-a524-462c-ac01-923eb19cf3e9
+  - id: fougas.msys2
+    uuid: dadf6fab-2c35-4181-a0d3-8dedd764631c
+  - id: GitHub.vscode-pull-request-github
+    uuid: 69ddd764-339a-4ecc-97c1-9c4ece58e36d
+  - id: hediet.vscode-drawio
+    uuid: ea6a6046-2132-421f-a984-664909fcf0b8
+  - id: James-Yu.latex-workshop
+    uuid: 61d03280-3919-4dd1-bce1-178ca21fdeaf
+  - id: jdinhlife.gruvbox
+    uuid: c6d564c4-ca8c-45ba-abf6-c85f2d1468d8
+  - id: jeff-hykin.better-cpp-syntax
+    uuid: 73767f91-7dcb-43cb-90b3-596d073eea1f
+  - id: mechatroner.rainbow-csv
+    uuid: 3792588c-3d35-442d-91ea-fe6a755e8155
+  - id: ms-azure-devops.azure-pipelines
+    uuid: 7032281c-aa10-4e95-9049-46a8bd112af3
+  - id: ms-azuretools.vscode-azureappservice
+    uuid: 42691ca6-18d6-4efe-9e9a-1aabad399d4b
+  - id: ms-azuretools.vscode-azurefunctions
+    uuid: 2ed5adbe-c4e1-4227-8e41-31e2095b30e3
+  - id: ms-azuretools.vscode-azureresourcegroups
+    uuid: 260e9ed1-160d-4f7e-807c-2eb076ba3846
+  - id: ms-azuretools.vscode-azurestorage
+    uuid: 2a1fdf76-30a9-4155-94f1-73462a7cee3f
+  - id: ms-azuretools.vscode-azurevirtualmachines
+    uuid: 6c14d399-a13b-4542-b439-f521b071cf35
+  - id: ms-azuretools.vscode-bicep
+    uuid: 1e9f2dc9-aa4c-4e27-afc5-f781e9a9cd9b
+  - id: ms-azuretools.vscode-cosmosdb
+    uuid: 951e1945-25a8-4ea0-aa11-076ac75b098d
+  - id: ms-azuretools.vscode-docker
+    uuid: 0479fc1c-3d67-49f9-b087-fb9069afe48f
+  - id: ms-dotnettools.vscode-dotnet-runtime
+    uuid: 1aab81a1-b3d9-4aef-976b-577d5d90fe3f
+  - id: ms-python.python
+    uuid: f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5
+  - id: ms-python.vscode-pylance
+    uuid: 364d2426-116a-433a-a5d8-a5098dc3afbd
+  - id: ms-toolsai.jupyter
+    uuid: 6c2f1801-1e7f-45b2-9b5c-7782f1e076e8
+  - id: ms-toolsai.jupyter-keymap
+    uuid: 9f6dc8db-620c-4844-b8c5-e74914f1be27
+  - id: ms-toolsai.jupyter-renderers
+    uuid: b15c72f8-d5fe-421a-a4f7-27ed9f6addbf
+  - id: ms-vscode-remote.remote-containers
+    uuid: 93ce222b-5f6f-49b7-9ab1-a0463c6238df
+  - id: ms-vscode-remote.remote-ssh
+    uuid: 607fd052-be03-4363-b657-2bd62b83d28a
+  - id: ms-vscode-remote.remote-ssh-edit
+    uuid: bfeaf631-bcff-4908-93ed-fda4ef9a0c5c
+  - id: ms-vscode-remote.remote-wsl
+    uuid: f0c5397b-d357-4197-99f0-cb4202f22818
+  - id: ms-vscode.azurecli
+    uuid: 5dcca53c-1485-4cdc-a643-4a366d2ac9e0
+  - id: ms-vscode.cmake-tools
+    uuid: 7c889349-8749-43d4-8b5e-08939936d7f4
+  - id: ms-vscode.cpptools
+    uuid: 690b692e-e8a9-493f-b802-8089d50ac1b2
+  - id: ms-vscode.cpptools-extension-pack
+    uuid: 3957b2f6-f086-49b5-a7b4-5da772123130
+  - id: ms-vscode.cpptools-themes
+    uuid: 99b17261-8f6e-45f0-9ad5-a69c6f509a4f
+  - id: ms-vscode.vscode-node-azure-pack
+    uuid: 849943af-364f-4353-ba78-bb5a7f6d37c4
+  - id: ms-vsliveshare.vsliveshare
+    uuid: 5a6dc0d5-dc02-4121-8e24-cad33a2ff0af
+  - id: ms-vsliveshare.vsliveshare-audio
+    uuid: f38fdd1c-7ee2-47b1-90b9-77ecc90d4bff
+  - id: ms-vsliveshare.vsliveshare-pack
+    uuid: 87caf16b-d487-45c0-877d-573fe319b015
+  - id: msazurermtools.azurerm-vscode-tools
+    uuid: 6bbbdb2c-957f-4af7-8257-6f5e68e15bad
+  - id: njpwerner.autodocstring
+    uuid: 2d6fea35-f68e-461d-9b7b-5cd05be99451
+  - id: paulosilva.vsc-octave-debugger
+    uuid: 7700543d-6458-4295-b2d4-00b5cb6ade17
+  - id: platformio.platformio-ide
+    uuid: 6cf182b2-70cf-433e-97f2-45f414c9ad89
+  - id: redhat.fabric8-analytics
+    uuid: efcb43ca-77e6-43e4-8ddc-ada617cb34bd
+  - id: redhat.java
+    uuid: 198a707e-28af-4e84-8610-6e2f628dd12d
+  - id: redhat.vscode-commons
+    uuid: 2f0eaac2-070b-4dc7-9b23-8dd4c970c11c
+  - id: redhat.vscode-xml
+    uuid: 6703768d-d42f-474e-9f6e-5f288d53f6e8
+  - id: rust-lang.rust
+    uuid: 570e6089-b871-41df-9cf4-a723cb34ef01
+  - id: tht13.html-preview-vscode
+    uuid: 76fbde36-77d4-4688-b1f8-202727442961
+  - id: toasty-technologies.octave
+    uuid: 759ce531-84bf-40f1-894d-fc1bdf71838d
+  - id: tootone.org-mode
+    uuid: 618b2be8-a710-4d5d-a5c7-40cff3e970e3
+  - id: twxs.cmake
+    uuid: 2be7cf14-2603-402e-9771-fd79df83cdf8
+  - id: vscjava.vscode-java-debug
+    uuid: 61fcd0cf-64d7-4836-8d6b-d55f4fb83281
+  - id: vscjava.vscode-java-dependency
+    uuid: 7865e561-1c83-410e-9b99-aabada597a7e
+  - id: vscjava.vscode-java-pack
+    uuid: 96f11e1f-1a46-4592-b084-f025b2c2a81f
+  - id: vscjava.vscode-java-test
+    uuid: 67c06b0d-1891-42ca-b2a8-113e79bff069
+  - id: vscjava.vscode-maven
+    uuid: b0f06c6b-24fb-4d7b-bd79-bc5e2fa17312
+  - id: vscjava.vscode-spring-initializr
+    uuid: a205ad34-542b-4c67-a9ed-f645103ad9c0
+  - id: vscodevim.vim
+    uuid: d96e79c6-8b25-4be3-8545-0e0ecefcae03
