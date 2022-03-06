@@ -2,12 +2,12 @@
 
 # A script to perform incremental backups using rsync
 
-set -o errexit
-set -o nounset
-set -o pipefail
+#set -o errexit
+#set -o nounset
+#set -o pipefail
 
 readonly SOURCE_DIR="${HOME}"
-readonly BACKUP_DIR="/run/media/bsahin/bruh/backup"
+readonly BACKUP_DIR="/mnt/backup"
 readonly DATETIME="$(date '+%Y-%m-%d_%H:%M:%S')"
 readonly BACKUP_PATH="${BACKUP_DIR}/${DATETIME}"
 readonly LATEST_LINK="${BACKUP_DIR}/latest"
