@@ -1,24 +1,21 @@
+@theme "catppuccin-macchiato"
+
 configuration{
-    modi: "combi,window,drun,ssh";
-    combi-modes:"window,drun,run,ssh";
-    window-format: "{t:55} {c}";
+    modi: "combi,run,drun,window,ssh";
+    combi-modes: "drun,window,run,ssh";
     icon-theme: "Oranchelo";
     show-icons: true;
-//    matching: "fuzzy";
-    terminal: "gnome-terminal";
-    ssh-command: "{terminal} -- {ssh-client} {host} [-p {port}]";
-    run-shell-command: "{terminal} -- {cmd}";
-    combi-display-format: "{text}";
+    terminal: "alacritty";
     drun-display-format: "{icon} {name}";
     location: 0;
     disable-history: false;
     hide-scrollbar: true;
     display-drun: "   Apps ";
     display-run: "   Run ";
-    display-window: " 﩯  Window";
-    display-Network: " 󰤨  Network";
+    display-window: " 󰕰  Window";
+    display-ssh: " 󰤨  ssh";
     sidebar-mode: true;
+    font: "CaskaydiaCove NFM 10";
 }
 
-@theme "catppuccin-macchiato"
 

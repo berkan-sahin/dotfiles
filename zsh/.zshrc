@@ -31,9 +31,10 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 export DENO_INSTALL="/home/bsahin/.deno"
+#export GEM_HOME="$(gem env user_gemhome)"
 export EDITOR=/usr/bin/nvim
 which podman 2>/dev/null >/dev/null && export DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock
-export PATH=/usr/local/cuda/bin:$PATH:$DENO_INSTALL/bin:/usr/local/texlive/2023/bin/x86_64-linux:/home/bsahin/.emacs.d/bin:/home/bsahin/.config/emacs/bin:/home/bsahin/.local/bin:/home/bsahin/.local/share/gem/ruby/3.0.0/bin:/opt/MATLAB/R2023a/bin:/home/bsahin/.local/bin/statusbar:/opt/anaconda/condabin:/home/bsahin/Documents/ders/cs490/TopDownNvidia/src:/home/bsahin/x-tools/arm-kobo-linux-gnueabihf/bin:/opt/Qt/5.15.2/gcc_64/bin:$HOME/riscv64-unknown-elf-gcc-10.1.0-2020.08.2-x86_64-linux-ubuntu14/bin
+export PATH=/usr/local/cuda/bin:$PATH:$DENO_INSTALL/bin:/usr/local/texlive/2023/bin/x86_64-linux:/home/bsahin/.emacs.d/bin:/home/bsahin/.config/emacs/bin:/home/bsahin/.local/bin:/home/bsahin/.local/share/gem/ruby/3.0.0/bin:/home/bsahin/.local/bin/statusbar
 export LD_LIBRARY_PATH=/usr/local/cuda/lib:$PATH
 export QT_QPA_PLATFORM=xcb
 [[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -42,19 +43,24 @@ export QT_QPA_PLATFORM=xcb
 [[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [[ -f ~/Documents/src/powerlevel10k/powerlevel10k.zsh-theme ]] && source ~/Documents/src/powerlevel10k/powerlevel10k.zsh-theme
 [[ -f /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme ]] && source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-export DIR_UNTIL_TOPDOWN=/home/bsahin/Documents/ders/cs490
 
 DISABLE_AUTO_TITLE="true"
 
-case $TERM in xterm*)
-    precmd () {print -Pn "\e]0;%n@%m\a"}
-    ;;
-esac
+
+# Add the following lines to set the terminal title
+function set_terminal_title() {
+  local user_host_dir="%n@%m: %~"
+  print -Pn "\e]0;${user_host_dir}\a"
+}
+
+# Use the precmd hook to update the terminal title before each command prompt
+precmd_functions+=(set_terminal_title)
+
 
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
-alias vim="nvim"
-alias vi="nvim"
+[[ -x /usr/bin/nvim ]] && alias vim="nvim"
+[[ -x /usr/bin/nvim ]] && alias vi="nvim"
 alias ll="ls --color=auto -lAh"
 [[ -x /usr/bin/exa ]] && alias ls="exa" && alias ll="exa -lah --git" && alias tree="exa -l --tree --git"
 [[ -x /usr/bin/eza ]] && alias ls="eza" && alias ll="eza -lah --git" && alias tree="eza -l --tree --git"

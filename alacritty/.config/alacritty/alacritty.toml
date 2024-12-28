@@ -3,6 +3,9 @@ import = ["/home/bsahin/.config/alacritty/catppuccin/catppuccin-macchiato.toml"]
 [font]
 size = 12.0
 
+[env]
+WINIT_X11_SCALE_FACTOR = "1"
+
 [font.normal]
 family = "CaskaydiaCove NFM"
 style = "Regular"
