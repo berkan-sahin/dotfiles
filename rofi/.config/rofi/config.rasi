@@ -16,6 +16,7 @@ configuration{
     display-ssh: " 󰤨  ssh";
     sidebar-mode: true;
     font: "CaskaydiaCove NFM 10";
+    ssh-client: "kitten ssh";
 }
 
 

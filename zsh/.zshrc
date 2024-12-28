@@ -57,6 +57,7 @@ function set_terminal_title() {
 precmd_functions+=(set_terminal_title)
 
 
+# Aliases
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 [[ -x /usr/bin/nvim ]] && alias vim="nvim"
@@ -64,7 +65,13 @@ alias grep="grep --color=auto"
 alias ll="ls --color=auto -lAh"
 [[ -x /usr/bin/exa ]] && alias ls="exa" && alias ll="exa -lah --git" && alias tree="exa -l --tree --git"
 [[ -x /usr/bin/eza ]] && alias ls="eza" && alias ll="eza -lah --git" && alias tree="eza -l --tree --git"
-#alias emacs="emacs -nw"
+# use kitten ssh (the best invention of 21st century, while ssh itself is the best invention of 20th century)
+if [[ $TERM == "xterm-kitty" ]]; then
+  alias s="kitten ssh"
+  alias ssh="kitten ssh"
+else
+  alias s="ssh"
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
